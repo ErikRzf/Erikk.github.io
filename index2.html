@@ -7,20 +7,22 @@
         <div class="login-box">
         <img src="./img/avatar.png" class="avatar">
             <h1>Register here</h1>
-                <form>
+                <form action="user_register.php" method="POST">
                     <p>First Name</p>
-                    <input type="text" name="username" placeholder="Enter Username">
+                    <input type="text" name="Fname" placeholder="Enter First Name">
                     <p>Last Name</p>
-                    <input type="text" name="username" placeholder="Enter Username">
+                    <input type="text" name="Lname" placeholder="Enter Last Name">
                     <p>Username</p>
-                    <input type="text" name="username" placeholder="Enter Username">
+                    <input type="text" name="Username" placeholder="Enter Username">
                     <p>Password</p>
-                    <input type="password" name="password" placeholder="Enter Password">
+                    <input type="password" name="Password" placeholder="Enter Password">
                     
-                    <p>Male</p><input type="radio" name="Gender">
+                    <!-- <p>Male</p><input type="radio" name="Gender">
                     <p>Female</p> 
                     <input type="radio" name="Gender"> 
-                 <br> 
+                 <br>  -->
+                        <input type="radio" name="jenis_kelamin" value="L">Laki Laki
+                        <input type="radio" name="jenis_kelamin" value="P">Perempuan
                    <select>
                         <option>+62</option>
                         <option>+86</option>
