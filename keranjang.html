@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Keranjang</title>
+	     <nav class="navbar" style="margin-bottom: 12px;">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">FIKSHOPPING</a> 
+            </li>
+               <form class="search-form" method="get" action="/search">
+          <input type="text" name="q" placeholder="Search"/>
+          <input type="submit" value="Search"/>
+        </form>
+
+             <li style="float: right;">
+                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+               
+            </li>
+
+            <li style="float: right;">
+              <a href="">Log In</a>
+              <ul class="tab">
+                 <li><a href="login.html">Log In</a></li>
+                  <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
+   <nav class="navbar">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">Home</a> 
+            </li>
+            <li>
+                <a href="#">Kategori</a>
+                <ul class="tab">
+                    <li><a href="#">Fashion</a>
+                      <ul class="tab">
+                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
+                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
+                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Olahraga</a></li>
+                    <li><a href="#">Teknologi</a></li>
+                    <li><a href="#">Aksesoris</a></li>
+                </ul>
+            </li>   
+            <li style="float: right;">
+                <a href="#">Contact Us</a>
+               
+            </li>
+
+            
+        </ul>
+    </nav>
+</head>
+<body>
+  <main>
+    <div class="keranjang">
+      <div class="keranjang-labels">
+        <ul>
+          <li class="item item-heading">Barang</li>
+          <li class="price">Harga</li>
+          <li class="jumlah">Jumlah</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div class="keranjang-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="img/nnn.png">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-jumlah"></span>Sneaker</strong></h1>
+            <p><span>Hitam, Size 43</span></p>
+          </div>
+        </div>
+        <div class="price">5.000.000</div>
+        <div class="jumlah">
+          <input type="number" value="1" min="1" class="jumlah-field">
+        </div>
+        <div class="subtotal">5.000.000</div>
+        <div class="remove">
+          <button><a href="">Hapus</a></button>
+        </div>
+      </div>
+      <div class="keranjang-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="img/jaz.png">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-jumlah">Jas Tuxedo</span></strong></h1>
+            <p><span>Hitam Polos</span></p>
+          </div>
+        </div>
+        <div class="price">500.000</div>
+        <div class="jumlah">
+          <input type="number" value="1" min="1" class="jumlah-field">
+        </div>
+        <div class="subtotal">500.000</div>
+        <div class="remove">
+          <button><a href="">Hapus</a></button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="box-total">
+        <div class="box-total-total-items"><span class="total-items"></span>Harga</div>
+        <div class="box-total-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="keranjang-subtotal">5.500.000</div>
+         
+        </div>
+        <div class="box-total-delivery">
+          <select name="delivery-collection" class="box-total-delivery-selection">
+              <option value="0" selected="selected">Pilih Kurir</option>
+             <option value="JNE">JNE</option>
+             <option value="J&T">J&T</option>
+             <option value="TIKI">TIKI</option>
+             <option value="POs indonesia">POS indonesia</option>
+          </select>
+        </div>
+        <div class="box-total-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">5.500.000</div>
+        </div>
+        <div class="box-total-checkout">
+          <button class="checkout-cta"><a href="">Checkout</a></button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
