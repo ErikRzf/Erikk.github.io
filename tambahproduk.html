@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tambah Peoduk</title>
+    <nav class="navbar" style="margin-bottom: 12px;">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">FIKSHOPPING</a> 
+            </li>
+               <form class="search-form" method="get" action="/search">
+          <input type="text" name="q" placeholder="Search"/>
+           <button class="btn-search"><a href="#">Search</a></button>
+        </form>
+
+             <li style="float: right;">
+                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+               
+            </li>
+
+            <li style="float: right;">
+              <a href="">Log In</a>
+              <ul class="tab">
+                 <li><a href="login.html">Log In</a></li>
+                  <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
+   <nav class="navbar">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">Home</a> 
+            </li>
+            <li>
+                <a href="#">Kategori</a>
+                <ul class="tab">
+                    <li><a href="#">Fashion</a>
+                      <ul class="tab">
+                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
+                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
+                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Olahraga</a></li>
+                    <li><a href="#">Teknologi</a></li>
+                    <li><a href="#">Aksesoris</a></li>
+                </ul>
+            </li>   
+            <li style="float: right;">
+                <a href="#">Contact Us</a>
+               
+            </li>
+
+            
+        </ul>
+    </nav>
+</head>
+<body>
+  <div class="container">
+    <form method="POST" action="#">
+   <div class="field-group">
+     <label for="name" class="label">Nama Produk:</label>
+     <div class="field">
+       <input name="name" id="name"  type="text"  value=""  required>
+     </div>
+   </div>
+
+   <div class="field-group">
+     <label for="uname" class="label">Jumlah Barang:</label>
+     <div class="field">
+       <input name="uname" id="uname" type="text" value="" required>
+     </div>
+   </div>
+  
+   <div class="field-group">
+     <label for="email" class="label">Ukuran:</label>
+     <div class="field">
+       <input name="email" id="email" type="email" spellcheck="false" value=""  required> 
+     </div>
+   </div>
+
+
+
+   <div class="field-group">
+     <label for="desc" class="label">Description:</label>         
+     <div class="field">
+       <textarea id="desc" name="desc" spellcheck="true" rows="10" cols="50" placeholder="Deskripsi"></textarea>
+     </div>
+   </div>
+   <div class="field-group">
+     <label for="desc" class="label">File</label>         
+     <div class="field">
+       <input type="file" name="file">File
+     </div>
+   </div>
+   
+   <div class="field-group">
+     <div class="field" style="text-align: right">
+       <input id="submit" name="submit" type="submit" value="Submit">
+     </div>
+   </div>
+   </form>
+  </div>
+
+</body>
+
+</html>
