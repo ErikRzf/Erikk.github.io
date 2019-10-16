@@ -1,22 +1,39 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(./img/ecommerce2.jpg);
+    /*background: url(./img/ecommerce2.jpg);*/
+    background-color: #fff;
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
 }
+h2{
+ margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+
+}
+h4  {
+   margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
 .login-box{
+  position: relative;
+  /* margin-top: 50px; */
     width: 400px;
-    height: 500px;
+    height: 400px;
     background: rgba(0, 0,0,0.5);
     color: #fff;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    position: absolute;
+    /*position: absolute;*/
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
+    border-radius: 12px;
 }
 .avatar{
     width: 100px;
@@ -24,7 +41,7 @@ body{
     border-radius: 50%;
     position: absolute;
     top: -50px;
-    left: calc(50% -50px); 
+    left: calc(50% -50px);
 }
 h1{
     margin: 0;
@@ -33,11 +50,17 @@ h1{
     font-size: 22px;
 }
 .login-box p{
-    margin: 0;
-    padding: 0;
+    margin-top: 0px;
+    padding: 0px;
     font-weight: bold;
 
 }
+
+.login-box button{
+background-color: #333;
+padding:0px;
+}
+
 .login-box input{
     width: 100%;
     margin-bottom: 20px;
@@ -71,36 +94,149 @@ h1{
 }
 .login-box a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 10px;
     color: #fff;
 
 }
 .login-box a :hover{
     color: #39dc79;
 }
-
 ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
 
 }
-.navbar-default{
-  /* margin-top: 0; */
-  position: fixed;
-/* float:right;
-background-color: #000 */
-padding-top: 12px;;
-    width: 100%;
-    background: black;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: #E8E8E8;
-    text-decoration: none;
+
+
+.navbar-top img{
+width: 23px;
+height: 23px;
+}
+
+.navbar-top:before,
+.navbar-top:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.navbar{
+ 
+}
+
+.navbar > ul{
+  list-style:none;
+  background-color: #333;
+  border-radius: 5px;
+  padding:0px 12px;
+}
+.navbar > ul > li{
+  display:block;
+  float:left;
+  border-right: 1px solid #BBB;
+  border-right: 1px solid rgba(10, 10, 10, .1);
+}
+.navbar > ul > li:hover{
+  
+}
+
+.navbar > ul > li:last-child{
+  border-right:0px;
+}
+.navbar > ul > li > a{
+  display:block;
+  text-decoration:none;
+  padding: 18px 50px;
+  font-weight:bold;
+  text-shadow: 0 1px #F8F8F8;
+  color:#fff;
+}
+.navbar > ul > li > a:hover{
+  -webkit-box-shadow: 0 0 24px #000000;
+  -moz-box-shadow: 0 0 24px #000000;
+  box-shadow: 0 0 24px #000000;
+}
+.navbar > ul > li > a:hover,.navbar > ul > li:hover{
+  background-color: #333;
+  -webkit-box-shadow: inset 0 3px #EEE;
+  -moz-box-shadow: inset 0 3px #eee;
+  box-shadow: inset 0 3px #EEE;
+  border-left: none;
+  
+}
+.navbar > ul > li > a.active{}
+
+.navbar .tab{
+  position:absolute;
+  list-style:none;
+  min-width:200px;
+  border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid rgba(10, 10, 10, .1);
+  color:#787878;
+  background-color:white;
+}
+
+
+.navbar div.tab{
+  padding:10px 15px 10px;
+}
+.navbar div.tab p{
+  font-size:9pt;
+}
+.navbar div.tab span{
+  font-size:8pt;
+  margin-top:7px;
+}
+.navbar div.tab address{
+  font-size:8pt;
+  line-height:13pt;
+  margin-top:9px;
+  padding-left:12px;
+}
+.navbar div.tab .copy-right{
+  font-size:6pt;
+  line-height:13pt;
+  margin-top:7px;
+}
+
+
+.navbar ul.tab li{
+  float:none;
+  border-bottom: 1px solid rgba(10, 10, 10, .1);
+}
+.navbar ul.tab li a{
+  display:block;
+  padding:10px 15px 10px;
+  text-decoration:none;
+  font-size:10pt;
+  color:#787878;
+}
+.navbar ul.tab li a:hover{
+   color:#232323;
+   background-color:#f9f9f9;
+}
+
+/* Display tab */
+.navbar .tab{
+  position: absolute;
+  z-index: 500;
+  display:none;
+  margin-top:-5px;
+}
+li:hover > .tab{
+  display:block;
+  margin-top:0;
+}
+
+.top-nav{
+  background-color: #333;
 }
 .left-nav{
   padding: 8px 15px;
     float: right;
+    background-color: #333;
 }
 .left-nav a{
   margin: 0px 20px;
@@ -109,14 +245,120 @@ padding-top: 12px;;
       color:#fff;
 
 }
+.search-form {
+  position: relative;
+}
+.search-form>input[type="text"] {
+  margin-top: 8px;
+  display: block;
+  width: 20%;
+  height: 34px;
+  padding: 6px 73px 6px 8px;
+  font-size: 14px;
+  font-weight: normal;
+ /* line-height: 1.4;*/
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.btn-search {
+  margin-top: 12px;
+  position: absolute;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  /*padding: 10px 8px;*/
+  font-size: 14px;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #555;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
 
-.left-thumbnail{
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .jumbotron{
+  background-color: #fff;
+  /*margin: auto;*/
+  border: 4px solid #000;
+  /*padding-bottom: 0px;*/
+  border-radius: 50px;
+background-color:rgba(255,255,255,0.8); 
+}
+
+header h1{
+  position: relative;
+  top: 310px;
+  color:#000;
+  left: 230px;
+  
+}
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+
+.left-kotak{
   position: relative;
 /* margin: 25px 50px 75px; */
 }
 
 
-.left-thumbnail img{
+.left-kotak img{
 margin:25px 50px 75px 25px;
   position: relative;
   margin-top: 80px;
@@ -125,7 +367,7 @@ margin:25px 50px 75px 25px;
   border-radius: 18px;
   top: 32px;
 }
- .left-thumbnail h2{
+ .left-kotak h2{
   position: relative;
   /* margin-top: 900px; */
 left: 220px;
@@ -133,7 +375,7 @@ bottom: 300px;
 font-size: 15px;
 }
 
-.left-thumbnail h3{
+.left-kotak h3{
   color: #fff;
   position: relative;
   left :450px;
@@ -148,7 +390,7 @@ font-size: 15px;
   left :310px;
   bottom: 120px;
 }
-.left-thumbnail form {
+.left-kotak form {
   position: relative;
   left :450px;
   bottom: 310px;
@@ -156,7 +398,7 @@ font-size: 15px;
 }
 
 
-.right-thumbnail{
+.right-kotak{
   /*margin:25px 50px 75px 25px;*/
   /*padding-left: 50px;*/
   /*background: rgba(0,0,0,0.5);*/
@@ -171,7 +413,7 @@ font-size: 15px;
   border: 4px solid #000;
   bottom: 290px;
 }
-.right-thumbnail ul{
+.right-kotak ul{
   padding-top: 25px;
   padding-left: 75px;
 }
@@ -231,7 +473,153 @@ input {
   /*text-align: center;  */
 }
 
-/*CSS keranjnag dan detailproduk*/
+.grid-home {
+  border-radius: 30px;
+  border:2px solid #000;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px 300px;
+  grid-gap: 1px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+
+div, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.left-column, #Grid{
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+#Grid h2{
+  left: 120px;
+}
+#Grid li{
+ /* border-radius: 24px;
+  border:1px solid #000;*/
+  display: inline-block;
+  background: transparent;
+  width: 27%;
+  padding-top: 23%; 
+  margin-bottom: 2.5%;
+}
+#Grid img{
+  border:2px solid #000;
+  background: #f4ee59;
+  width: 70px;
+  height: 70px;
+  margin-top: 0px;
+}
+/*#Grid:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+  border-top: 10px dashed #922d8d; /*  */
+}*/
+
+#Grid .placeholder{
+  padding: 0;
+  border-top: 10px solid #922d8d;  
+}
+
+
+
+
+
+@media (max-width: 800px){
+  #Grid li{
+    width: 31%;
+    padding-top: 31%;
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 600px){
+  #Grid li{
+    width: 48%;
+    padding-top: 48%;
+    margin-bottom: 4%;
+  }
+}
+
+
+
+@media (max-width: 400px){
+  #Grid li{
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+
+.row{
+  width: 100%;
+  display: table;
+  content: "";
+  clear: both;
+
+}
+
+.left-column{
+  width: 60%;
+  float: left;
+}
+.right-column{
+  width: 40%;
+  /*left: 320px;*/
+  float: right;
+}
+
+.kotak{
+  border:2px solid #000;
+  border-radius: 50px;
+  padding: 6px;
+  width: 60%;
+  margin: 30px 10%;
+  background: #f4ee59;
+  box-shadow: 3px 5px 9px #aaa;
+}
+
+.kotak .text{
+  padding: 10px 20px;
+  margin: 0px 0px;
+}
+
+#Grid img{
+  width: 123px;
+  height:123px;
+}
+
+/*CSS slider*/
+#slider img {
+  position: relative;
+  left: 550px;
+  width: 240px;
+  height: auto;
+  margin-top: 80px;
+  border: 2px solid #000;
+  background-color:  #fff;
+  border-radius: 13px;
+
+}
+#slider h1 {
+  position: relative;
+  text-align: center;
+  color:#000;
+}
+
+/*CSS UNTUK KERANJANG*/
 
 a {
   border: 0 none;
@@ -622,4 +1010,221 @@ button {
   .product-details {
     padding: 0 1rem;
   }
+}
+
+/*css untuk fomr*/
+form .field-group {
+  position: relative;
+  top:12px; 
+  display: flex;
+  margin: 0px 60px 12px 0;
+  padding-right: 12px;
+}
+
+form .field-group .label {
+  flex: 1;
+  text-align: right;
+  margin: 0 8px 0 0;
+  padding: 2px 0;
+}
+
+form .field-group .field {
+  flex: 3;
+}
+
+form .field-group:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form .field-group:last-child .field {
+  max-width: 75%;
+}
+
+input, select, textarea {
+  padding: .6rem 1rem;
+  font-size: 1.6rem;
+  background:#000;
+  background:rgba(0,0,0,0.16);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
+  border: 0 none;
+  border-radius: 3px;
+  /*color: #BBBBBB;*/
+  color: #000;
+  transition:background .2s;
+}
+
+textarea {
+  width: 100%;
+}
+
+select option {
+  margin:40px;
+  /*background: rgba(0,0,0,0.65);
+  color:#CFCFCF;*/
+  background: #cfcfcf;
+  color: #000;
+}
+
+input, select {
+  width: 50%;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+  width: auto;
+}
+
+input[name=submit], input[name=reset] {
+  margin-right:0.563em;
+  margin-top:1.3em;
+  font-size:1em;
+  border: 0 none;
+  background:#000;
+  /*background:rgba(0,0,0,0.2);
+  color: #BBBBBB;*/
+  background: #bbb;
+  color: #000;
+  border-radius: 3px;
+  padding: 0.563em 4em;
+  cursor:pointer;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.06);
+  transition:background 0.2s
+}
+
+/*/////////////// RWD STYLES ////////////////////*/
+@media (max-width: 720px) {
+  form .field-group .label {
+    text-align: left;
+    margin: 0;
+  }
+
+  input, select {
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  input,
+  select {
+    width: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"],
+  input[type="submit"] {
+    width: auto;
+  }
+
+  form .field-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 6px 0;
+  }
+
+  form .field-group .label {
+    padding: 0 0 5px 0;
+    margin: 10px 0 0 0;
+  }
+}
+
+/*CSS PRODUK*/
+.kotaks {
+  margin: 20px;
+  width: 600px;
+  list-style-type: none;
+
+}
+
+.kotaks li {
+  float: left;
+  width: 46%;
+  display: block;
+  margin-right: 2%;
+  margin-bottom: 10px;
+}
+
+.product-kotak img {
+  height: 60px;
+  max-width: 100%;
+  border: 1px solid #000;
+  border-radius: 13px;
+}
+
+/* css style dari kotak */
+
+.product-kotak {
+  max-width: 280px;
+  font-size: 12px;
+}
+
+.product-kotak > a {
+  background:  #f4ee59;
+  color: #333;
+  transition: all 100ms;
+  position: relative;
+  display: block;
+  z-index: 0;
+  padding-bottom: 5px;
+}
+
+.product-kotak > a:hover {
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.product-kotak .product-kotak-img {
+  display: block;
+  height: auto;
+  max-height: 150px;
+  width: 100%;
+}
+
+.product-kotak figcaption {
+  display: block;
+  padding: 0 10px;
+}
+
+.product-kotak .product-kotak-address {
+  color: #888;
+  line-height: 1.2;
+}
+
+.product-kotak .product-kotak-address i {
+  font-size: 14px;
+  margin-right: 2px;
+  line-height: 1.2;
+} 
+
+.product-kotak .product-kotak-price {
+  display: block;
+  text-align: right;
+}
+
+.product-kotak .product-kotak-price .price-savings,
+.product-kotak .product-kotak-price .original-price {
+  line-height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-kotak .product-kotak-price .price-savings {
+  float: left;
+  color: green;
+  color: #f90000;
+}
+
+.product-kotak .product-kotak-price .original-price {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.product-kotak .product-kotak-price .amount-price {
+  text-align: right;
+  font-size: 20px;
+  color: #000;
+}
+
+.product-kotak .product-kotak-price .from {
+  font-size: 12px;
 }
