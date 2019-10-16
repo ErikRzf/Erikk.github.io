@@ -5,18 +5,57 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>keranjang Belanja</title>
-    <nav class="navbar-default  navbar-fixed-top">
-      <div class="">
-     
-        <ul class="nav navbar-nav">
-          <li class="left-nav"><a href="#login"><span class="medium">Login</span></a></li>
+     <nav class="navbar" style="margin-bottom: 12px;">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">FIKSHOPPING</a> 
+            </li>
+               <form class="search-form" method="get" action="/search">
+          <input type="text" name="q" placeholder="Search"/>
+          <button class="btn-search"><a href="#">Search</a></button>
+        </form>
+
+             <li style="float: right;">
+                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+               
+            </li>
+
+            <li style="float: right;">
+              <a href="">Log In</a>
+              <ul class="tab">
+                 <li><a href="login.html">Log In</a></li>
+                  <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
         </ul>
-        <ul class="nav nav-navbar">
-          <li class="left-nav"><a href="#"><span class="medium">Kategori</span></a></li>
-          <li class="left-nav"><a href="#chart"><span class="medium">Chart</span></a></li>
-          <li class="left-nav"><a href="#"><span class="medium">Home</span></a></li>
+    </nav>
+   <nav class="navbar">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">Home</a> 
+            </li>
+            <li>
+                <a href="#">Kategori</a>
+                <ul class="tab">
+                    <li><a href="#">Fashion</a>
+                      <ul class="tab">
+                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
+                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
+                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Olahraga</a></li>
+                    <li><a href="#">Teknologi</a></li>
+                    <li><a href="#">Aksesoris</a></li>
+                </ul>
+            </li>   
+            <li style="float: right;">
+                <a href="#">Contact Us</a>
+               
+            </li>
+
+            
         </ul>
-      </div>
     </nav>
   </head>
 
@@ -29,6 +68,7 @@
           <li class="item item-heading">Barang</li>
           <li class="price">Harga</li>
           <li class="jumlah">Jumlah</li>
+          <li class="jumlah">Ukuran</li>
          
         </ul>
       </div>
@@ -39,7 +79,7 @@
           </div>
           <div class="product-details">
             <h1><strong><span class="item-jumlah"></span>Sneaker</strong></h1>
-            <p >"Hitam, Size 43"</p>
+            <p >"Hitam, Size 39-45"</p>
             
           </div>
         </div>
@@ -47,7 +87,12 @@
         <div class="jumlah">
           <input type="number" value="1" min="1" class="jumlah-field">
         </div>
-        
+        <div class="ukuran">
+          <div class="jumlah">
+            <input type="number" value="43" min="39" name="" class="jumlah-field">
+          </div>
+        </div>
+
         <div class="remove">
           <button class="checkout-cta"><a href="">masukan Keranjang</a></button>
         </div>
@@ -55,6 +100,9 @@
    
     </div>
   </main>
+ 
+
 
   </body>
+  
 </html>
