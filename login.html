@@ -1,89 +1,115 @@
 <html>
-    <head>
-        <title>Perancangan website</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+    <title>Perancangan website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="container">
         <div class="container">
-         <div class="container">
-  <nav class="navbar" style="margin-bottom: 12px;">
-        <ul class="navbar-top">
-            <li>
-                <a href="index.html">FIKSHOPPING</a> 
-            </li>
-               <form class="search-form" method="get" action="/search">
-          <input type="text" name="q" placeholder="Search"/>
-          <input type="submit" value="Search"/>
+            <nav class="navbar" style="margin-bottom: 12px;">
+                <ul class="navbar-top">
+                    <li>
+                        <a href="index.html">FIKSHOPPING</a>
+                    </li>
+                    <form class="search-form" method="get" action="/search">
+                        <input type="text" name="q" placeholder="Search" />
+                        <input type="submit" value="Search" />
+                    </form>
+
+                    <li style="float: right;">
+                        <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+
+                    </li>
+
+                    <li style="float: right;">
+                        <a href="">Log In</a>
+                        <ul class="tab">
+                            <li><a href="login.html">Log In</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar">
+                <ul class="navbar-top">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategori</a>
+                        <ul class="tab">
+                            <li><a href="#">Fashion</a>
+                                <ul class="tab">
+                                    <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
+                                    <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
+                                    <li style="float: right;"><a href="fashion.html">Baju</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Olahraga</a></li>
+                            <li><a href="#">Teknologi</a></li>
+                            <li><a href="#">Aksesoris</a></li>
+                        </ul>
+                    </li>
+                    <li style="float: right;">
+                        <a href="#">Contact Us</a>
+
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</head>
+
+<body>
+
+    <div class="login-box">
+        <img src="./img/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form action="index.html" method="POST" onSubmit="return validasi(this)">
+            <div>
+                <p>Username</p>
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="password" name="password" id=password1 placeholder="Enter Password">
+
+            </div>
+
+            <div>
+                <p>Konfirmasi Password</p>
+                <input type="password" name="password" id=password2 placeholder="Konfirmasi Password">
+
+            </div>
+            <br>
+            <a href="register.html">Jika belum punya akun, silahkan daftar <input type="button" value="Daftar" class="button"></a>
+            <br>
+            <hr>
+            <br><br>
+            <!-- <button><a href="index.html">Masuk</a></button> -->
+            
+                <input type="submit" value="Masuk" class="tombol"> 
+
         </form>
 
-             <li style="float: right;">
-                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
-               
-            </li>
+    </div>
 
-            <li style="float: right;">
-              <a href="">Log In</a>
-              <ul class="tab">
-                 <li><a href="login.html">Log In</a></li>
-                  <li><a href="register.html">Register</a></li>
-              </ul>
-            </li>
-        </ul>
-    </nav>
-   <nav class="navbar">
-        <ul class="navbar-top">
-            <li>
-                <a href="index.html">Home</a> 
-            </li>
-            <li>
-                <a href="#">Kategori</a>
-                <ul class="tab">
-                    <li><a href="#">Fashion</a>
-                      <ul class="tab">
-                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
-                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
-                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Olahraga</a></li>
-                    <li><a href="#">Teknologi</a></li>
-                    <li><a href="#">Aksesoris</a></li>
-                </ul>
-            </li>   
-            <li style="float: right;">
-                <a href="#">Contact Us</a>
-               
-            </li>
+</body>
+<script type="text/javascript">
+    function validasi(form)  {
+        var username = document.getElementById("username").value;
+        var password1 = document.getElementById("password1").value;
+        var password2 = document.getElementById("password2").value;
+        if (username != "" && password1 != "" && passwrod2 != "") {
+            return (true);
+        } else {
+            alert('Anda harus mengisi data dengan lengkap !') ;
+            return (false);
+        }
+    }
+</script>
 
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-
-    </head>
-    
-    <body>
-
-        <div class="login-box">
-        <img src="./img/avatar.png" class="avatar">
-            <h1>Login Here</h1>
-                <form>
-                    <p>Username</p>
-                    <input type="text" name="username" placeholder="Enter Username" required="">
-                    
-                    <p>Password</p>
-                    <input type="password" name="password" id=password1 placeholder="Enter Password" required="">
-
-                    <p>Konfirmasi Password</p>
-                    <input type="password" name="password" id=password2 placeholder="Konfirmasi Password" required="">
-
-                 <br>
-                    <a href="register.html">Jika belum punya akun, silahkan daftar</a>
-                    <button><a href="index.html">Masuk</a></button>
-                    
-                </form>
-                
-        </div>
-        
-    </body>
-    
 </html>
