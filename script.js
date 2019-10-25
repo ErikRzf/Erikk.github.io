@@ -16,9 +16,10 @@ function validasireg() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   if (fname !="" && lname !="" && username != "" && password != "" ) {
-      return true;
+      return (true);
   } else {
       alert('Anda harus mengisi data dengan lengkap !');
+      return (false);
   }
 }
 
