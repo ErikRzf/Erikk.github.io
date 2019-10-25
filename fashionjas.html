@@ -1,90 +1,153 @@
 <html>
 <title>
-    Home
+    Fashion Jas
 </title>
+<link rel="stylesheet" type="text/css" href="style.css">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <nav class="navbar" style="margin-bottom: 12px;">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">FIKSHOPPING</a> 
+            </li>
+               <form class="search-form" method="get" action="/search">
+          <input type="text" name="q" placeholder="Search"/>
+         
+          <button class="btn-search"><a href="#">Search</a></button>
+              </form>
 
+
+            <li style="float: right;">
+              <a href="">Log In</a>
+              <ul class="tab">
+                 <li><a href="login.html">Log In</a></li>
+                  <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
+             <li style="float: right;">
+                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+               
+            </li>
+
+        </ul>
+    </nav>
+   <nav class="navbar">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">Home</a> 
+            </li>
+            <li>
+                <a href="#">Kategori</a>
+                <ul class="tab">
+                    <li><a href="#">Fashion</a>
+                      <ul class="tab">
+                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
+                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
+                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Olahraga</a></li>
+                    <li><a href="#">Teknologi</a></li>
+                    <li><a href="#">Aksesoris</a></li>
+                </ul>
+            </li>   
+            <li style="float: right;">
+                <a href="#">Contact Us</a>
+               
+            </li>
+
+            
+        </ul>
+    </nav> 
+</head>
+ <header>
+        <div class="container">
+          <div class="jumbotron">
+            <h1>New Products!</h1>
+            <div id="slider">
+              <img class="Sliders" src="img/nnn.png">
+              <img class="Sliders" src="img/kaos.png">
+
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+
+          
+          </div>
+            
+        </div>
+    </header>
 <body>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> FIKSHOPPING</span>
-                    <!-- <img alt="Brand" src="..."> -->
-                </a>
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+    <div class="product-grid product-grid--flexbox">
+            <div class="product-grid__wrapper">
+<div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/jaz.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jas Pria Hitam</span>
+                        <span class="product-grid__price">Rp. 80.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-default">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="home.html">Home</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">ABOUT
-                    <li><a href="fashion.html">FASHION BAJU</a></li>
-                    <li><a href="fashionjas.html">FASHION JAS</a></li>
-                    <li><a href="fashionspt.html">SEPATU</a></li>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="account.html">ACCOUNT</a></li>
-
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
-    <div class="card">
-        <div class="col-sm-6 col-md-4">
-            <img src="img/jaz.png" alt="Denim Jeans" style="width:50%">
-            <h1>Jas Kantor</h1>
-            <p class="price">Rp.190.000,-</p>
-            <p>Jas Kantor Warna Hitam.</p>
-            <a href="cart.html"> <button>ADD TO CART</button></a>
-        </div>
-
-        <div class="card">
-            <div class="col-sm-6 col-md-4">
-                <img src="img/jaz.png" alt="Denim Jeans" style="width:50%">
-                <h1>Jas Kantor</h1>
-                <p class="price">Rp.190.000,-</p>
-                <p>Jas Kantor Warna Hitam.</p>
-                <a href="cart.html"> <button>ADD TO CART</button></a>
-            </div>
-
-            <div class="card">
-                <div class="col-sm-6 col-md-4">
-                    <img src="img/jaz.png" alt="Denim Jeans" style="width:50%">
-                    <h1>Jas Kantor</h1>
-                    <p class="price">Rp.190.000,-</p>
-                    <p>Jas Kantor Warna Hitam.</p>
-                    <a href="cart.html"> <button>ADD TO CART</button></a>
+                </div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/jasbiru.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jas Pria Blazer</span>
+                        <span class="product-grid__price">Rp.90.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>             
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/blazer.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jas Pria Blazer</span>
+                        <span class="product-grid__price">Rp. 100.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                               <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>
+                                         
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/jasputih.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jas Pria Blazer</span>
+                        <span class="product-grid__price">Rp. 210.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>            
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
+    </div>
+</div>
 </body>
-
+<script src="script.js"></script>
 </html>
