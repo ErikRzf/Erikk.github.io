@@ -1,6 +1,7 @@
 <html>
-<title>
-    Home
+<head>
+    <title>
+    Fashioin
 </title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- Latest compiled and minified CSS -->
@@ -11,7 +12,7 @@
             </li>
                <form class="search-form" method="get" action="/search">
           <input type="text" name="q" placeholder="Search"/>
-          <!-- <input type="submit" value="Search"/> -->
+         
           <button class="btn-search"><a href="#">Search</a></button>
               </form>
 
@@ -53,45 +54,98 @@
             <li style="float: right;">
                 <a href="#">Contact Us</a>
                
-            </li>
-
-            
+            </li>  
         </ul>
     </nav>
+</head>
+ <header>
+        <div class="container">
+          <div class="jumbotron">
+            <h1>New Products!</h1>
+            <div id="slider">
+              <img class="Sliders" src="img/nnn.png">
+              <img class="Sliders" src="img/kaos.png">
 
-<body>
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
 
-
-   
-
-    <div class="card">
-        <div class="col-sm-6 col-md-4">
-            <img src="img/kaos.png" alt="Denim Jeans" style="width:25%">
-            <h1></h1>
-            <p class="price">Rp.65.000,-</p><br>
-            <p>Kaosnya Adem.</p>
-            <a href="chart.html"> <button>BELI</button></a>
+          
+          </div>
+            
         </div>
-
-        <div class="card">
-            <div class="col-sm-6 col-md-4">
-                <img src="img/oneokrock.png" alt="Denim Jeans" style="width:25%">
-                <h1></h1>
-                <p class="price">Rp.65.000,-</p><br>
-                <p>Kaosnya Adem.</p>
-                <a href="chart.html"> <button>BELI</button></a>
-            </div>
-
-            <div class="card">
-                <div class="col-sm-6 col-md-4">
-                    <img src="img/moc.jpg" alt="Denim Jeans" style="width:25%">
-                    <h1></h1>
-                    <p class="price">Rp.65.000,-</p><br>
-                    <p>Kaosnya Adem.</p>
-                    <a href="chart.html"> <button>BELI</button></a>
+    </header>
+<body>
+<div class="product-grid product-grid--flexbox">
+            <div class="product-grid__wrapper">
+<div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/kaos.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Kaos Hitam</span>
+                        <span class="product-grid__price">Rp. 80.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                                <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>            
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/kaosabu.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Kaos abu-abu</span>
+                        <span class="product-grid__price">Rp.90.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                              <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/kemeja.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Kemeja Panjang</span>
+                        <span class="product-grid__price">Rp. 100.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                               <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/belang.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Green Strip T-Shirt</span>
+                        <span class="product-grid__price">Rp. 210.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
+                              <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-             
-</body>
 
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
 </html>
