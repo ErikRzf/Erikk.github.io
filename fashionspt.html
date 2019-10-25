@@ -1,20 +1,18 @@
 <html>
 <title>
-    Home
+    Sepatu
 </title>
 <!-- Latest compiled and minified CSS -->
-
 <link rel="stylesheet" type="text/css" href="style.css">
-<body>
-
-   <nav class="navbar" style="margin-bottom: 12px;">
+<head>
+     <nav class="navbar" style="margin-bottom: 12px;">
         <ul class="navbar-top">
             <li>
                 <a href="index.html">FIKSHOPPING</a> 
             </li>
                <form class="search-form" method="get" action="/search">
           <input type="text" name="q" placeholder="Search"/>
-          <!-- <input type="submit" value="Search"/> -->
+         
           <button class="btn-search"><a href="#">Search</a></button>
               </form>
 
@@ -60,35 +58,95 @@
 
             
         </ul>
-    </nav>
+    </nav> 
 
-    <div class="card"></div>
-    <div class="col-sm-6 col-md-4">
-        <img src="img/nnn.png" alt="Denim Jeans" style="width:25%">
-        <h1></h1>
-        <p class="price">Rp.250.000</p><br>
-        <p>Sepatu .</p>
-        <a href="chart.html"><button>BELI</button></a>
+</head>
+ <header>
+        <div class="container">
+          <div class="jumbotron">
+            <h1>New Products!</h1>
+            <div id="slider">
+              <img class="Sliders" src="img/nnn.png">
+              <img class="Sliders" src="img/kaos.png">
 
-    <div class="card"></div>
-    <div class="col-sm-6 col-md-4">
-        <img src="img/vans.png" alt="Denim Jeans" style="width:25%">
-        <h1></h1>
-        <p class="price">Rp.350.000</p><br>
-        <p>Sepatu .</p>
-        <a href="chart.html"> <button>BELI</button></a>
-    </div>
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
 
-    <div class="card"></div>
-    <div class="col-sm-6 col-md-4">
-        <img src="img/converse.png" alt="Denim Jeans" style="width:25%">
-        <h1></h1>
-        <p class="price">Rp.325.000</p><br>
-        <p>Sepatu .</p>
-        <a href="chart.html"> <button>BELI</button></a>
-    </div>
-
-    </div>
+          
+          </div>
+            
+        </div>
+    </header>
+<body>
+<div class="product-grid product-grid--flexbox">
+            <div class="product-grid__wrapper">
+<div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/nnn.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Sepatu</span>
+                        <span class="product-grid__price">Rp. 80.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : 39,40,41,42,43.</p>
+                                <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/nike.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Sepatu Pria & Wanita Nike </span>
+                        <span class="product-grid__price">Rp.90.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : 39,40,41,42,43.</p>
+                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/sepatuhijau.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Sepatu Converse hijau</span>
+                        <span class="product-grid__price">Rp. 100.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                               <p class="product-grid__description">Ukuran : 39,40,41,42,43.</p>
+                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>             
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/sepatumerah.png" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Sepatu Eureka R</span>
+                        <span class="product-grid__price">Rp. 210.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Ukuran : 39,40,41,42,43.</p>
+                                <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
-
+<script src="script.js"></script>
 </html>
