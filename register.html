@@ -1,106 +1,133 @@
 <html>
-    <head>
-        <title>Perancangan website</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+    <title>Perancangan website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="container">
         <div class="container">
-         <div class="container">
-  <nav class="navbar" style="margin-bottom: 12px;">
-        <ul class="navbar-top">
-            <li>
-                <a href="index.html">FIKSHOPPING</a> 
-            </li>
-               <form class="search-form" method="get" action="/search">
-          <input type="text" name="q" placeholder="Search"/>
-          <input type="submit" value="Search"/>
+            <nav class="navbar" style="margin-bottom: 12px;">
+                <ul class="navbar-top">
+                    <li>
+                        <a href="index.html">FIKSHOPPING</a>
+                    </li>
+                    <form class="search-form" method="get" action="/search">
+                        <input type="text" name="q" placeholder="Search" />
+                        <input type="submit" value="Search" />
+                    </form>
+
+                    <li style="float: right;">
+                        <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+
+                    </li>
+
+                    <li style="float: right;">
+                        <a href="">Log In</a>
+                        <ul class="tab">
+                            <li><a href="login.html">Log In</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar">
+                <ul class="navbar-top">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategori</a>
+                        <ul class="tab">
+                            <li><a href="#">Fashion</a>
+                                <ul class="tab">
+                                    <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
+                                    <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
+                                    <li style="float: right;"><a href="fashion.html">Baju</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Olahraga</a></li>
+                            <li><a href="#">Teknologi</a></li>
+                            <li><a href="#">Aksesoris</a></li>
+                        </ul>
+                    </li>
+                    <li style="float: right;">
+                        <a href="#">Contact Us</a>
+
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</head>
+
+<body>
+
+
+
+    <div class="login-box">
+        <img src="./img/avatar.png" class="avatar">
+        <h1>Register here</h1>
+        <form action=login.html method="POST" onSubmit="validasireg(this)">
+            <div>
+                <p>First Name</p>
+                <input type="text" name="Firstname" id="fname" placeholder="Enter Firstname">
+                </div>
+            <div>
+                <p>Last Name</p>
+                <input type="text" name="Lastname" id="lname" placeholder="Enter Lastname">
+            </div>
+            <div>
+                <p>Username</p>
+                <input type="text" name="Username" id="username" placeholder="Enter Username">
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="password" name="password" id="passwrod" placeholder="Enter Password">
+            </div>
+            <p><span>Male</span></p><input type="radio" name="Gender">
+            <br>
+            <br>
+            <p><span>Female</span></p>
+            <input type="radio" name="Gender">
+            <br>
+            <br>
+            <select>
+                <option>+62</option>
+                <option>+86</option>
+                <option>+33</option>
+                <option>+58</option>
+            </select>
+            <br>
+            <br>
+            <input type="Phone" placeholder="8897*******" name="">
+            <!-- <input type="submit" name="submit" value="Register" onclick="window.location.href=''"></a> -->
+            <input type="submit" value="Daftar" class="tombol">
+
+            <!-- <button onclick="window.location.href='login.html'">Register</button> -->
+            <br>
+            <!-- <button><a href="login.html"></a>Register</button> -->
+            <!-- <a href="login.html">Sudah punya akun, silahkan masuk</a> -->
         </form>
 
-             <li style="float: right;">
-                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
-               
-            </li>
 
-            <li style="float: right;">
-              <a href="">Log In</a>
-              <ul class="tab">
-                 <li><a href="login.html">Log In</a></li>
-                  <li><a href="register.html">Register</a></li>
-              </ul>
-            </li>
-        </ul>
-    </nav>
-   <nav class="navbar">
-        <ul class="navbar-top">
-            <li>
-                <a href="index.html">Home</a> 
-            </li>
-            <li>
-                <a href="#">Kategori</a>
-                <ul class="tab">
-                    <li><a href="#">Fashion</a>
-                      <ul class="tab">
-                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
-                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
-                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Olahraga</a></li>
-                    <li><a href="#">Teknologi</a></li>
-                    <li><a href="#">Aksesoris</a></li>
-                </ul>
-            </li>   
-            <li style="float: right;">
-                <a href="#">Contact Us</a>
-               
-            </li>
+    </div>
+</body>
 
-            
-        </ul>
-    </nav>
-</div>
-        </div>
+<script type="text/javascript">
+    function validasireg(form) {
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (fname != "" && lname != "" && username != "" && password != "") {
+            return (true);
+        } else {
+            alert('Anda harus mengisi data dengan lengkap !');
+            return (false);
+        }
+    }
+</script>
 
-    </head>
-    <body>
-
-
-    
-        <div class="login-box">
-        <img src="./img/avatar.png" class="avatar">
-            <h1>Register here</h1>
-                <form  action = regis.php method="POST">
-                    <p>First Name</p>
-                    <input type="text" name="Firstname"  placeholder="Enter Firstname">
-                    <p>Last Name</p>
-                    <input type="text" name="Lastname" placeholder="Enter Lastname">
-                    <p>Username</p>
-                    <input type="text" name="Username" placeholder="Enter Username">
-                    <p>Password</p>
-                    <input type="password" name="password" placeholder="Enter Password">
-
-                    <p><span>Male</span></p><input type="radio" name="Gender">
-                    <br>
-                    <br>
-                    <p><span>Female</span></p>
-                    <input type="radio" name="Gender">
-                 <br>
-                 <br>
-                   <select>
-                        <option>+62</option>
-                        <option>+86</option>
-                        <option>+33</option>
-                        <option>+58</option>
-                    </select>
-                  <br>
-                  <br>
-                    <input type="Phone" placeholder="8897*******" name="">
-                    <input type="submit" name="submit" value="Register" onclick="window.location.href=''"></a>
-                    <!-- <button onclick="window.location.href='login.html'">Register</button> -->
-                    <br>
-                   <!-- <button><a href="login.html"></a>Register</button> -->
-                    <!-- <a href="login.html">Sudah punya akun, silahkan masuk</a> -->
-                </form>
- 
-
-        </div>
-    </body>
 </html>
