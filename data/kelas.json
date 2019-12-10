@@ -1,0 +1,12 @@
+[
+	{
+		"foto" : "img/nnn.png",
+		"nama" : "Sepatu Pria",
+		"harga" : "150.000"
+	},
+	{
+		"foto" : "img/nnn.png",
+		"nama" : "Sepatu Pria",
+		"harga": "150.000"
+	}
+]
