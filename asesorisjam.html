@@ -1,0 +1,279 @@
+<html>
+<head>
+    <title>
+    Aksesoris
+</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Latest compiled and minified CSS -->
+ <nav class="navbar" style="margin-bottom: 12px;">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">FIKSHOPPING</a> 
+            </li>
+               <form class="search-form" method="get" action="/search">
+          <input type="text" name="q" placeholder="Search"/>
+         
+          <button class="btn-search"><a href="#">Search</a></button>
+              </form>
+
+
+            <li style="float: right;">
+              <a href="">Log In</a>
+              <ul class="tab">
+                 <li><a href="login.html">Log In</a></li>
+                  <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
+             <li style="float: right;">
+                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+               
+            </li>
+
+        </ul>
+    </nav>
+   <nav class="navbar">
+        <ul class="navbar-top">
+            <li>
+                <a href="index.html">Home</a> 
+            </li>
+            <li>
+                <a href="#">Kategori</a>
+                <ul class="tab">
+                    <li><a href="#">Fashion</a>
+                      <ul class="tab">
+                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
+                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
+                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Teknologi</a>
+                        <ul class="tab">
+                            <li>
+                                <li style="float: right;"><a href="teknologilaptop.html">Laptop</a></li>
+                                <li style="float: right;"><a href="teknologihp.html">Handphone</a></li>
+                                <li style="float: right;"><a href="teknologikomputer.html">Komputer</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Aksesoris</a>
+                        <ul class="tab">
+                            <li>
+                                <li style="float: right;"><a href="asesorisjam.html">Jam tangan</a></li>
+                                <li style="float: right;"><a href="asesorisheadset.html">Headphone</a></li>
+                                <li style="float: right;"><a href="asesoristopi.html">Topi</a></li>
+                            </li>
+                        </ul></li>
+                </ul>
+            </li>   
+            <li style="float: right;">
+                <a href="contactus.html">Contact Us</a>
+               
+            </li>  
+        </ul>
+    </nav>
+</head>
+ <header>
+        <div class="container">
+          <div class="jumbotron">
+            <h1>New Products!</h1>
+            <div id="slider">
+              <img class="Sliders" src="img/nnn.png">
+              <img class="Sliders" src="img/kaos.png">
+
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+
+          
+          </div>
+            
+        </div>
+    </header>
+<body>
+<div id="sidebar">
+  <h3>CART</h3>
+    <div id="cart">
+      <span class="empty">No items in cart.</span>       
+    </div>
+    
+    <h3>CATEGORIES</h3>
+    <div class="checklist categories">
+      <ul>
+          <li><a href=""><span></span>New Arivals</a></li>
+            <li><a href=""><span></span>Accesories</a></li>
+            <li><a href=""><span></span>Bags</a></li>
+            <li><a href=""><span></span>Dressed</a></li>
+            <li><a href=""><span></span>Jackets</a></li>
+            <li><a href=""><span></span>jewelry</a></li>
+            <li><a href=""><span></span>Shoes</a></li>
+            <li><a href=""><span></span>Shirts</a></li>
+            <li><a href=""><span></span>Sweaters</a></li>
+            <li><a href=""><span></span>T-shirts</a></li>
+        </ul>
+    </div>
+    
+    <h3>COLORS</h3>
+    <div class="checklist colors">
+      <ul>
+          <li><a href=""><span></span>Beige</a></li>
+            <li><a href=""><span style="background:#222"></span>Black</a></li>
+            <li><a href=""><span style="background:#6e8cd5"></span>Blue</a></li>
+            <li><a href=""><span style="background:#f56060"></span>Brown</a></li>
+            <li><a href=""><span style="background:#44c28d"></span>Green</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href=""><span style="background:#999"></span>Grey</a></li>
+            <li><a href=""><span style="background:#f79858"></span>Orange</a></li>
+            <li><a href=""><span style="background:#b27ef8"></span>Purple</a></li>
+            <li><a href=""><span style="background:#f56060"></span>Red</a></li>
+            <li><a href=""><span style="background:#fff;border: 1px solid #e8e9eb;width:13px;height:13px;"></span>White</a></li>
+        </ul>        
+    </div>
+    
+    <h3>SIZES</h3>
+    <div class="checklist sizes">
+      <ul>
+          <li><a href=""><span></span>XS</a></li>
+            <li><a href=""><span></span>S</a></li>
+            <li><a href=""><span></span>M</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href=""><span></span>L</a></li>
+            <li><a href=""><span></span>XL</a></li>
+            <li><a href=""><span></span>XXL</a></li>
+        </ul>        
+    </div>
+    
+     <h3>PRICE RANGE</h3>
+     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/price-range.png" alt="" />
+</div>
+
+<div class="product-grid product-grid--flexbox">
+            <div class="product-grid__wrapper">
+<div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/biden sport.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jam tangan Pria </span>
+                        <span class="product-grid__price">Rp. 450.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Biden Sport Fashion</p>
+                                <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>            
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/biden.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jam tangan Pria</span>
+                        <span class="product-grid__price">Rp.510.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Biden Stainles steel Model Eksekutif</p>
+                              <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/Cluse.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jam tangan Pria</span>
+                        <span class="product-grid__price">Rp. 300.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                               <p class="product-grid__description">Jam tangan Analog Cluse(OEM) CS7</p>
+                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">         
+                            <img src="img/skmeiad1117.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Jam tangan Pria</span>
+                        <span class="product-grid__price">Rp. 250.000</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">SKMEI AD1117</p>
+                              <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>              
+                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+    </div>
+</div>
+
+<footer class="foot1">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-day-time">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- <ul>
+                                <li>Opening Hours: Mon - Friday: 8AM - 5PM</li>
+                                <li>Sunday: 8:00 AM - 12:00 PM</li>
+                            </ul> -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="phone-no">
+                                <a href="tel:+12 34 56 78 90"><i class="fa fa-mobile" aria-hidden="true"></i>Call +6281245665454</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+
+                    <div class="col-md-4">
+                        <h4>Information</h4>
+                        <ul class="address1">
+                            <li><i class="fa fa-map-marker"></i>Jember,Jawa Timur</li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:#">fikshopping@mgail.com</a></li>
+                            <li><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:12 34 56 78 90">+6281245665454</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Follow us</h4>
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 center-text">
+                        <p class="copyright text-uppercase">© Copyright Fikshopping
+                        </p>
+                    <!-- </div> -->
+                   <!--  -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
