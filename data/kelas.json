@@ -1,12 +1,18 @@
 [
 	{
-		"foto" : "img/kaos.png",
-		"nama" : "Sepatu Pria",
-		"harga" : "150.000"
+		"foto"	:"img/blog/blog_2.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"matematika"	
 	},
 	{
-		"foto" : "img/kaos.png",
-		"nama" : "Sepatu Pria",
-		"harga": "150.000"
+		"foto"	:"img/blog/blog_2.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"matematika"	
+	},
+	{
+		"foto"	:"img/blog/blog_2.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"matematika"	
 	}
+
 ]
