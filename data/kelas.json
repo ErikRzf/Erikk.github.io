@@ -1,18 +1,18 @@
-[
+
 	{
-		"foto"	:"img/jaz.png",
-		"judul"	:"Jas Pria",	
-		"harga":"120.000"
+		"foto"	:"img/blog/blog_2.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"matematika"	
 	},
 	{
-		"foto"	:"img/jaz.png",
-		"judul"	:"Jas Pria",
-		"harga":"120.000"
+		"foto"	:"img/blog/blog_2.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"matematika"	
 	},
 	{
-		"foto"	:"img/jaz.png",
-		"judul"	:"Jas Pria",
-		"harga":"120.000"
+		"foto"	:"img/blog/blog_2.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"matematika"	
 	}
 
 ]
