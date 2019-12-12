@@ -381,21 +381,25 @@
     </footer>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.12.0/d3.min.js"></script> -->
-<script src="script.js"></script>
-	<script type="text/javascript">
-   $(".load-data").click(function () {
-        $.getJSON('https://raw.githubusercontent.com/ErikRzf/Erikk.github.io/master/data/kelas.json', function (dat a) 
-        {
+<script type="text/javascript">
+    $(".load-data").click(function () {
+        $.getJSON('https://raw.githubusercontent.com/ErikRzf/Erikk.github.io/master/data/kelas.json', function (data) {
             console.log( data );
             $.each(data, function (n, elem) {
-                console.log('foto '+elem['foto']+' - nama '+elem['nama'])
-                $('.image-block').append(`    
-                    <div class="image-block">
-                    <img src="`+elem['foto']+`">
-                    <h3 clas>`+elem['nama']+`</h3>
-                   
-        
-            
+                console.log('foto '+elem['foto']+' - judul '+elem['judul']+' - detail '+elem['detail'])
+                $('.add__data__all').append(`    <div class="col-4">
+                    <div class="single-home-blog">
+                    <div class="card">
+                    <img src="`+elem['foto']+`" class="card-img-top" alt="blog">
+                    <div class="card-body">
+                    <a href="detaillive.html" class="btn_4">`+elem['kategori']+`</a>
+                    <a href="detaillive.html">
+                    <h5 class="card-title">`+elem['judul']+`</h5>
+                    </a>
+                    <p>Blablablabla</p>
+                    </div>
+                    </div>
+                    </div>
                     </div>
                     `);
             });
