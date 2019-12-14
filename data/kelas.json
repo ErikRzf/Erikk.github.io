@@ -1,13 +1,13 @@
 [
 	{
-		"foto"	:"img/jas.png",
+		"foto"	:"img/jaz.png",
 		"judul"	:"Rute terbaik",
-		"kategori":"Ukuran L"	
+		"harga":"100.000"	
 	},
 	{
-		"foto"	:"img/jas.png",
+		"foto"	:"img/jaz.png",
 		"judul"	:"Rute terbaik",
-		"kategori":"Ukuran L"	
+		"harga":"100.000"	
 	}
 
 ]
