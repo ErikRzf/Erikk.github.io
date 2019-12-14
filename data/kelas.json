@@ -1,14 +1,13 @@
 [
 	{
-		"foto"	:"img/blog/blog_2.png",
-		"judul"	:"Jas Pria",
-		"kategori":"matematika"	
+		"foto"	:"img/jas.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"Ukuran L"	
 	},
 	{
-		"foto"	:"img/blog/blog_2.png",
-		"judul"	:"Jas Pria",
-		"kategori":"UKuran : L"	
+		"foto"	:"img/jas.png",
+		"judul"	:"Rute terbaik",
+		"kategori":"Ukuran L"	
 	}
-	
 
 ]
