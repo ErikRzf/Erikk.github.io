@@ -1,0 +1,13 @@
+[
+	{
+		"foto"	:"img/hedapple.jpg",
+		"judul"	:"Headseat Apple",
+		"harga":"1.000.000"	
+	},
+	{
+		"foto"	:"img/steel.png",
+		"judul"	:"Headset SteelSeries",
+		"harga":"4.000.000"	
+	}
+
+]
