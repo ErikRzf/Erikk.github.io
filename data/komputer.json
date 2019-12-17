@@ -1,0 +1,13 @@
+[
+	{
+		"foto"	:"img/kompasus.jpg",
+		"judul"	:"KOmputer Asus",
+		"harga":"100.000"	
+	},
+	{
+		"foto"	:"img/imac.png",
+		"judul"	:"iMac",
+		"harga":"100.000"	
+	}
+
+]
