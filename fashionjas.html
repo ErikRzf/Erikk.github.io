@@ -1,153 +1,465 @@
+   
+<!DOCTYPE html>
 <html>
-<title>
-    Fashion Jas
-</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<!-- Latest compiled and minified CSS -->
 <head>
-    <nav class="navbar" style="margin-bottom: 12px;">
-        <ul class="navbar-top">
-            <li>
-                <a href="index.html">FIKSHOPPING</a> 
-            </li>
-               <form class="search-form" method="get" action="/search">
-          <input type="text" name="q" placeholder="Search"/>
-         
-          <button class="btn-search"><a href="#">Search</a></button>
-              </form>
+   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Jaz</title>
+  
+<nav class="main-nav">
+            <div class="main-nav__heading">
+                <div class="main-nav__logo">
 
+                    <a href="index.html" class="main-nav__logo-link"><img src="img/logofik.png"></a>
+                </div>
+                <button id="toggle-nav">
+                    menu
+                </button>
+            </div>
 
-            <li style="float: right;">
-              <a href="">Log In</a>
-              <ul class="tab">
-                 <li><a href="login.html">Log In</a></li>
-                  <li><a href="register.html">Register</a></li>
-              </ul>
-            </li>
-             <li style="float: right;">
-                <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
-               
-            </li>
+                <ul class="main-nav__menu">
+                    
+                    
+                    <li class="main-nav__menu-item main-nav__menu-item--dropdown">
+                        <span class="main-nav__menu-item-link">Kategori</span>
+                        <ul class="main-nav__sub-menu">
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Fashion</a>
+                                <ul class="tab">
+                                  <li><a href="fashionspt.html">Sepatu</a></li>
+                                  <li><a href="fashion.html">Baju</a></li>
+                                   <li><a href="fashionjas.html">Jaz</a></li>
+                                 
+                                </ul>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Teknologi</a>
+                                <ul class="tab">
+                                  <li><a href="teknologikomputer.html">Komputer</a></li>
+                                  <li><a href="teknologihp.html">Hp</a></li>
+                                  <li><a href="teknologilaptop.html">laptop</a></li>
 
-        </ul>
-    </nav>
-   <nav class="navbar">
-        <ul class="navbar-top">
-            <li>
-                <a href="index.html">Home</a> 
-            </li>
-            <li>
-                <a href="#">Kategori</a>
-                <ul class="tab">
-                    <li><a href="#">Fashion</a>
-                      <ul class="tab">
-                        <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
-                        <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
-                        <li style="float: right;"><a href="fashion.html">Baju</a></li>
-                      </ul>
+                                </ul>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Olahraga</a>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Aksesoris</a>
+                                <ul class="tab">
+                                  <li><a href="asesorisheadset.html">Headset</a></li>
+                                  <li><a href="asesorisjam.html">Jam</a></li>
+                                  <li><a href="asesoristopi.html">Topi</a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li><a href="#">Olahraga</a></li>
-                    <li><a href="#">Teknologi</a></li>
-                    <li><a href="#">Aksesoris</a></li>
-                </ul>
-            </li>   
-            <li style="float: right;">
-                <a href="#">Contact Us</a>
-               
-            </li>
+                
+                    
+                    <li class="main-nav__menu-item main-nav__menu-item--dropdown">
+                        <span class="main-nav__menu-item-link">Login</span>
+                        <ul class="main-nav__sub-menu">
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="login.html">Log In</a>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="register.html">Register</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="main-nav__menu-item">
+                        <a class="main-nav__menu-item-link" href="#">About Us</a>
+                    </li>
+                   
+                    <li class="main-nav__menu-item">
+                        <a class="main-nav__menu-item-link" href="keranjang.html"><img src="img/shopping-cart.png"></a>
+                    </li>
 
-            
-        </ul>
-    </nav> 
+                </ul>
+
+        </nav>
 </head>
  <header>
-        <div class="container">
           <div class="jumbotron">
-            <h1>New Products!</h1>
-            <div id="slider">
-              <img class="Sliders" src="img/nnn.png">
-              <img class="Sliders" src="img/kaos.png">
 
-            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-</div>
+            <div class="wrapper">
+              <img src="img/fiklogo2.png">
+              <h1><strong>FIK</strong>Shopping</h1>
+              <h2>Belanja Sepuasnya di FIKShopping Sekarang Juga!</h2>
+              <span style="color:black; ">Dapatkan Diskon HIngga 50%</span>
 
+               <div id="slider">
+
+                    <img class="Sliders" src="img/nnn.png">
+                    <img class="Sliders" src="img/kaos.png">
+                    <h2>New Products!</h2>
+
+                    <button class="" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+
+            </div>
+            
+           
           
           </div>
-            
-        </div>
     </header>
-<body>
-    <div class="product-grid product-grid--flexbox">
-            <div class="product-grid__wrapper">
-<div class="product-grid__product-wrapper">
-                    <div class="product-grid__product">
-                        <div class="product-grid__img-wrapper">         
-                            <img src="img/jaz.png" alt="Img" class="product-grid__img" />
-                        </div>
-                        <span class="product-grid__title">Jas Pria Hitam</span>
-                        <span class="product-grid__price">Rp. 80.000</span>
-                        <div class="product-grid__extend-wrapper">
-                            <div class="product-grid__extend">
-                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
-                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>              
-                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-grid__product-wrapper">
-                    <div class="product-grid__product">
-                        <div class="product-grid__img-wrapper">         
-                            <img src="img/jasbiru.jpg" alt="Img" class="product-grid__img" />
-                        </div>
-                        <span class="product-grid__title">Jas Pria Blazer</span>
-                        <span class="product-grid__price">Rp.90.000</span>
-                        <div class="product-grid__extend-wrapper">
-                            <div class="product-grid__extend">
-                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
-                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>             
-                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="product-grid__product-wrapper">
-                    <div class="product-grid__product">
-                        <div class="product-grid__img-wrapper">         
-                            <img src="img/blazer.png" alt="Img" class="product-grid__img" />
-                        </div>
-                        <span class="product-grid__title">Jas Pria Blazer</span>
-                        <span class="product-grid__price">Rp. 100.000</span>
-                        <div class="product-grid__extend-wrapper">
-                            <div class="product-grid__extend">
-                               <p class="product-grid__description">Ukuran : M,L,XL.</p>
-                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>
-                                         
-                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="product-grid__product-wrapper">
-                    <div class="product-grid__product">
-                        <div class="product-grid__img-wrapper">         
-                            <img src="img/jasputih.jpg" alt="Img" class="product-grid__img" />
-                        </div>
-                        <span class="product-grid__title">Jas Pria Blazer</span>
-                        <span class="product-grid__price">Rp. 210.000</span>
-                        <div class="product-grid__extend-wrapper">
-                            <div class="product-grid__extend">
-                                <p class="product-grid__description">Ukuran : M,L,XL.</p>
-                               <a href="chart.html">  <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>   </a>            
-                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!--   <header>
+               
+               <div class="">
 
+                 <img class="img-absolute" src="img/city.png" alt="City 1">
+               <div class="wrapper astonish animated fadeInDown">
+                    <h1><strong>City</strong>Scapes</h1>
+                    <h2>A free, responsive, landing page. <br>
+                    Created by Jesus Rodriguez.</h2>
+               </div>
+               </div>
+               
+          </header> -->
+
+  
+    
+
+<body>
+<!--    <div class="grid-home">
+        
+    </div> -->
+<div id="sidebar">
+  <h3>CART</h3>
+    <div id="cart">
+      <span class="empty">No items in cart.</span>       
     </div>
+    
+      <h3>CATEGORIES</h3>
+    <div class="checklist categories">
+      <ul>
+          <li><a href=""><span></span>New Arivals</a></li>
+            <li><a href=""><span></span>Aksesoris</a></li>
+            <li><a href=""><span></span>Teknologi</a></li>
+            <li><a href=""><span></span>Baju</a></li>
+            <li><a href=""><span></span>Jaz</a></li>
+            <li><a href=""><span></span>Jam Tangan</a></li>
+            <li><a href=""><span></span>Sepatu</a></li>
+            <li><a href=""><span></span>Headseat</a></li>
+            <li><a href=""><span></span>Sepatu</a></li>
+            <li><a href=""><span></span>Topi</a></li>
+        </ul>
+    </div>
+    
+    <h3>COLORS</h3>
+    <div class="checklist colors">
+      <ul>
+          <li><a href=""><span></span>Beige</a></li>
+            <li><a href=""><span style="background:#222"></span>Black</a></li>
+            <li><a href=""><span style="background:#6e8cd5"></span>Blue</a></li>
+            <li><a href=""><span style="background:#f56060"></span>Brown</a></li>
+            <li><a href=""><span style="background:#44c28d"></span>Green</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href=""><span style="background:#999"></span>Grey</a></li>
+            <li><a href=""><span style="background:#f79858"></span>Orange</a></li>
+            <li><a href=""><span style="background:#b27ef8"></span>Purple</a></li>
+            <li><a href=""><span style="background:#f56060"></span>Red</a></li>
+            <li><a href=""><span style="background:#fff;border: 1px solid #e8e9eb;width:13px;height:13px;"></span>White</a></li>
+        </ul>        
+    </div>
+    
+    <h3>SIZES</h3>
+    <div class="checklist sizes">
+      <ul>
+          <li><a href=""><span></span>XS</a></li>
+            <li><a href=""><span></span>S</a></li>
+            <li><a href=""><span></span>M</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href=""><span></span>L</a></li>
+            <li><a href=""><span></span>XL</a></li>
+            <li><a href=""><span></span>XXL</a></li>
+        </ul>        
+    </div>
+    
+     
 </div>
-</body>
+
+
+
+
+
+<div id="grid">
+  <div >
+    <div class="loading_data">
+      <figure class="image-block">
+  <img src="img/blazer 1.png" alt="" />
+  <figcaption>
+    <h3>
+      Blazer
+    </h3>
+    <div class="price-big">
+            <span>Rp.120.000</span> Rp.100.000
+    </div>
+    <h3>Warna</h3>
+     <div class="colors-large">
+                <ul>
+                    <li><a href="" style="background:#222"><span></span></a></li>
+                    <li><a href="" style="background:#6e8cd5"><span></span></a></li>
+                    <li><a href="" style="background:#f56060"><span></span></a></li>
+                    <li><a href="" style="background:#44c28d"><span></span></a></li>
+                </ul> 
+            </div>
+    <p>Ukuran : L,XL,XXL</p>
+    <button class="addcart"><a href="chart.html">Add to Cart</a>
+      
+    </button>
+  </figcaption>
+</figure>
+
+  
+  <figure class="image-block">
+  
+  <img src="img/silver.jpg" alt="" />
+  <figcaption>
+    <h3>
+      blazer Silver
+    </h3>
+    <div class="price-big">
+            <span>Rp.120.000</span> Rp.100.000
+    </div>
+    <h3>Warna</h3>
+     <div class="colors-large">
+                <ul>
+                    <li><a href="" style="background:#222"><span></span></a></li>
+                    <li><a href="" style="background:#6e8cd5"><span></span></a></li>
+                    <li><a href="" style="background:#f56060"><span></span></a></li>
+                    <li><a href="" style="background:#44c28d"><span></span></a></li>
+                </ul> 
+            </div>
+    <p>Ukuran : L,XL,XXL</p>
+    <button class="addcart">
+      Add To Cart
+    </button>
+  </figcaption>
+</figure>
+  <figure class="image-block">
+  
+  <img src="img/jaz.png" alt="" />
+  <figcaption>
+    <h3>
+      Jaz Pria
+    </h3>
+    <div class="price-big">
+            <span>Rp.120.000</span> Rp.100.000
+    </div>
+    <h3>Warna</h3>
+     <div class="colors-large">
+                <ul>
+                    <li><a href="" style="background:#222"><span></span></a></li>
+                    <li><a href="" style="background:#6e8cd5"><span></span></a></li>
+                    <li><a href="" style="background:#f56060"><span></span></a></li>
+                    <li><a href="" style="background:#44c28d"><span></span></a></li>
+                </ul> 
+            </div>
+    <p>Ukuran : L,XL,XXL</p>
+    <button class="addcart">
+      Add To Cart
+    </button>
+  </figcaption>
+</figure>
+  
+  </div>
+  <button class="btn btn-1 btn-1a load-data" >More</button>
+  </div>
+       <div  >
+<footer class="footer-wrapper">
+  <div class="section-1">
+    <h2>About Us</h2>
+    <p>Fikshopping adalah, situs belanja online/marketplace yang menyediakan berbagai macam barang seperti, Barang Eletronik,Fashion life style dan lain-lain. Yang memudahkan pengguna untuk berbelanja  </p>
+  </div>
+  <div class="section-2">
+    <h2>Links</h2>
+    <ul>
+      <li class="link"><a href="" style="color: white;">Kunjungi Kami di Fasilkom Unej</a></li>
+      
+      <li class="link"><a href=""  style="color: white;">Contact us : Fikshopping@gmail.com</a></li>
+    </ul>
+  </div>
+  <div class="section-3 address">
+    <h2>Alamat</h2>
+    <address itemscope itemtype="http://schema.org/PostalAddress"> 
+<span itemprop="name">FIKSHOPPING</span><br> 
+<span itemprop="streetAddress">Universitas Jember</span><br> 
+<span itemprop="addressLocality">Kota Jember</span>, 
+<span itemprop="addressRegion">Tegalboto</span> 
+<span itemprop="postalCode">68171</span><br> 
+<span itemprop="addressCountry">Jember</span> 
+</address>
+  </div>
+  <div class="social">
+    <div class="social-group">
+      <div class="social-item">
+        <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+      </div>
+      <div class="social-item">
+        <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+      </div>
+      <div class="social-item">
+        <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+      </div>
+      <div class="social-item">
+        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+      </div>
+      <div class="social-item">
+        <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright"><a href="index.html"><img style="max-width: 60px;" src="img/logofik.png"></a><sub><span>Fikshopping</span>&copy; <span class="year"></span></sub></div>
+</footer>
+   </div> 
+</div>
+
+ 
 <script src="script.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+    $(".load-data").click(function () {
+        $.getJSON('https://raw.githubusercontent.com/ErikRzf/Erikk.github.io/master/data/kelas.json', function (data) {
+            console.log( data );
+            $.each(data, function (n, elem) {
+                console.log('foto '+elem['foto']+' - judul '+elem['judul']+' - harga '+elem['harga'])
+                $('.loading_data').append(`    
+                     <figure class="image-block">
+  
+  <img src="`+elem['foto']+`" alt="" />
+  <figcaption>
+    <h3>
+      `+elem['judul']+`
+    </h3>
+    <div class="price-big">
+            <span>Rp.120.000</span><br>`+elem['harga']+`
+    </div>
+     <h3>Warna</h3>
+     <div class="colors-large">
+                <ul>
+                    <li><a href="" style="background:#222"><span></span></a></li>
+                    <li><a href="" style="background:#6e8cd5"><span></span></a></li>
+                    <li><a href="" style="background:#f56060"><span></span></a></li>
+                    <li><a href="" style="background:#44c28d"><span></span></a></li>
+                </ul> 
+            </div>
+    <p>Ukuran : L,XL,XXL</p>
+    <button class="addcart">
+      Add To Cart
+    </button>
+  </figcaption>
+</figure>
+                    `);
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.12.0/d3.min.js"></script> -->
+
 </html>
