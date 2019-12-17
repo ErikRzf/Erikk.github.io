@@ -1,0 +1,13 @@
+[
+	{
+		"foto"	:"img/kemeja.jpg",
+		"judul"	:"Kemeja Pria",
+		"harga":"100.000"	
+	},
+	{
+		"foto"	:"img/flanel.png",
+		"judul"	:"Baju Flanel Pria",
+		"harga":"100.000"	
+	}
+
+]
