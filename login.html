@@ -3,78 +3,172 @@
 <head>
     <title>Perancangan website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/login.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <div class="container">
-        <div class="container">
-            <nav class="navbar" style="margin-bottom: 12px;">
-                <ul class="navbar-top">
-                    <li>
-                        <a href="index.html">FIKSHOPPING</a>
-                    </li>
-                    <form class="search-form" method="get" action="/search">
-                        <input type="text" name="q" placeholder="Search" />
-                        <input type="submit" value="Search" />
-                    </form>
+<nav class="main-nav">
+            <div class="main-nav__heading">
+                <div class="main-nav__logo">
 
-                    <li style="float: right;">
-                        <a href="keranjang.html"><img src="img/shopping-cart.png"></a>
+                    <a href="index.html" class="main-nav__logo-link"><img src="img/logofik.png"></a>
+                </div>
+                <button id="toggle-nav">
+                    menu
+                </button>
+            </div>
 
-                    </li>
+                <ul class="main-nav__menu">
+                    
+                    
+                    <li class="main-nav__menu-item main-nav__menu-item--dropdown">
+                        <span class="main-nav__menu-item-link">Kategori</span>
+                        <ul class="main-nav__sub-menu">
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Fashion</a>
+                                <ul class="tab">
+                                  <li><a href="fashionspt.html">Sepatu</a></li>
+                                  <li><a href="fashion.html">Baju</a></li>
+                                   <li><a href="fashionjas.html">Jaz</a></li>
+                                 
+                                </ul>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Teknologi</a>
+                                <ul class="tab">
+                                  <li><a href="teknologikomputer.html">Komputer</a></li>
+                                  <li><a href="teknologihp.html">Hp</a></li>
+                                  <li><a href="teknologilaptop.html">laptop</a></li>
 
-                    <li style="float: right;">
-                        <a href="">Log In</a>
-                        <ul class="tab">
-                            <li><a href="login.html">Log In</a></li>
-                            <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Olahraga</a>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#">Aksesoris</a>
+                                <ul class="tab">
+                                  <li><a href="asesorisheadset.html">Headset</a></li>
+                                  <li><a href="asesorisjam.html">Jam</a></li>
+                                  <li><a href="asesoristopi.html">Topi</a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
+                             <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="#"></a>
+                                <ul class="tab">
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+                                  <li><a href=""></a></li>
+
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                </ul>
-            </nav>
-            <nav class="navbar">
-                <ul class="navbar-top">
-                    <li>
-                        <a href="index.html">Home</a>
+                
+                    
+                    <li class="main-nav__menu-item main-nav__menu-item--dropdown">
+                        <span class="main-nav__menu-item-link">Login</span>
+                        <ul class="main-nav__sub-menu">
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="login.html">Log In</a>
+                            </li>
+                            <li class="main-nav__sub-menu-item">
+                                <a class="main-nav__sub-menu-item-link" href="register.html">Register</a>
+                            </li>
+                            
+                        </ul>
                     </li>
-                    <li>
-                        <li>
-                            <a href="#">Kategori</a>
-                            <ul class="tab">
-                                <li><a href="#">Fashion</a>
-                                  <ul class="tab">
-                                    <li style="float: right;"><a href="fashionspt.html">Sepatu</a></li>
-                                    <li style="float: right;"><a href="fashionjas.html">Jas</a></li>
-                                    <li style="float: right;"><a href="fashion.html">Baju</a></li>
-                                  </ul>
-                                </li>
-                                <li><a href="#">Teknologi</a>
-                                    <ul class="tab">
-                                        <li>
-                                            <li style="float: right;"><a href="teknologilaptop.html">Laptop</a></li>
-                                            <li style="float: right;"><a href="teknologihp.html">Handphone</a></li>
-                                            <li style="float: right;"><a href="teknologikomputer.html">Komputer</a></li>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Aksesoris</a>
-                                    <ul class="tab">
-                                        <li>
-                                            <li style="float: right;"><a href="asesorisjam.html">Jam tangan</a></li>
-                                            <li style="float: right;"><a href="asesorisheadset.html">Headphone</a></li>
-                                            <li style="float: right;"><a href="asesoristopi.html">Topi</a></li>
-                                        </li>
-                                    </ul></li>
-                            </ul>
-                        </li>   
-                        <li style="float: right;">
-                            <a href="contactus.html">Contact Us</a>
-                           
-                        </li>
-
+                    <li class="main-nav__menu-item">
+                        <a class="main-nav__menu-item-link" href="#">About Us</a>
+                    </li>
+                   
+                    <li class="main-nav__menu-item">
+                        <a class="main-nav__menu-item-link" href="keranjang.html"><img src="img/shopping-cart.png"></a>
+                    </li>
 
                 </ul>
-            </nav>
-        </div>
-    </div>
+
+        </nav>
 
 </head>
 
@@ -94,27 +188,16 @@
                 <input type="password" name="password" id=password1 placeholder="Enter Password">
 
             </div>
-
-            <div>
-                <p>Konfirmasi Password</p>
-                <input type="password" name="password" id=password2 placeholder="Konfirmasi Password">
-
-            </div>
             <br>
-            <a href="register.html">Jika belum punya akun, silahkan daftar <input type="button" value="Daftar"
-                    class="button"></a>
+            <a href="register.html"> <input type="button" value="Daftar" class="button"></a>
+            <a href="lupapass.html">Lupa Password </a>
             <br>
             <hr>
             <br><br>
             <!-- <button><a href="index.html">Masuk</a></button> -->
-            <!--             
-                <input type="submit" id="Masuk" class="tombol">  -->
-
-        </form>
-
-    </div>
-
-    <div class="center" action="index.html">
+            
+                <!-- <input type="submit" value="Masuk" class="tombol">  -->
+                  <div class="center" action="index.html">
         <input type="checkbox" id="click">
         <label for="click" class="click-me">Login</label>
         <div class="content">
@@ -129,7 +212,10 @@
         
         </div>
     </div>
+        </form>
+
+    </div>
+
 </body>
 <script src="script.js"> </script>
-
 </html>
