@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 	<title>Home</title>
   
-   <nav class="main-nav">
+     <nav class="main-nav">
             <div class="main-nav__heading">
                 <div class="main-nav__logo">
 
@@ -164,7 +164,17 @@
                     <li class="main-nav__menu-item">
                         <a class="main-nav__menu-item-link" href="#">About Us</a>
                     </li>
-                   
+                   <li class="main-nav__menu-item main-nav__menu-item--dropdown">
+                        <span class="main-nav__menu-item-link"><img src="img/avatar.png"></span>
+                        <ul class="main-nav__sub-menu">
+                          <li class="main-nav__sub-menu-item">
+                            <a class="main-nav__sub-menu-item-link"  href="#mod" data-toggle="modaloverlay" >Profil</a>
+                          </li>
+                          <li class="main-nav__sub-menu-item">
+                            <a class="main-nav__sub-menu-item-link" href="">Log Out</a>
+                          </li>
+                        </ul>
+                    </li>
                     <li class="main-nav__menu-item">
                         <a class="main-nav__menu-item-link" href="keranjang.html"><img src="img/shopping-cart.png"></a>
                     </li>
@@ -440,6 +450,34 @@
   </div>
   <button class="btn btn-1 btn-1a load-data" >More</button>
   </div>
+	
+	  <div id="mod" class="modaloverlay">
+  <div class="modal">
+    <a href="#close" class="close">&times;</a>
+    <form class="login-box">
+      <div class="">
+        <p style="color:black;">Nama</p>
+         <input type="text" name="nama" value="Budi Setiawan">
+      </div>
+      <div class="">
+        <p style="color:black;">Email</p>
+         <input type="email" name="nama" value="Budi@gmail.com">
+      </div>
+     <div class="">
+        <p style="color:black;">Alamat</p>
+         <input type="text" name="nama" value="Jember">
+      </div>
+      <div class="">
+        <p style="color:black;">Phone</p>
+         <input type="text" name="nama" value="081234567890">
+      </div>
+
+    </form>
+    <div>
+      <h1>Profile kamu</h1>
+    </div>
+  </div>
+</div>
        <div  >
 <footer class="footer-wrapper">
   <div class="section-1">
