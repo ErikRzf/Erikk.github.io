@@ -2108,7 +2108,7 @@ input[name=submit], input[name=reset] {
   max-height: min-content;
   /*width: inherit;*/
 }
-.footer-wrapper h2{
+.footer-wrapper h2,p{
 color:white;
 }
 
