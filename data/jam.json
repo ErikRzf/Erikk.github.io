@@ -1,0 +1,13 @@
+[
+	{
+		"foto"	:"img/forsining.jpg",
+		"judul"	:"Jam Tangan Forsining Gold",
+		"harga":"100.000.000"	
+	},
+	{
+		"foto"	:"img/casio.png",
+		"judul"	:"Jam tangan Casio",
+		"harga":"80.000.000"	
+	}
+
+]
