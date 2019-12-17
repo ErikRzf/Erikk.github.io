@@ -1,0 +1,13 @@
+[
+	{
+		"foto"	:"img/iphonex.png",
+		"judul"	:"iPhone X Pro",
+		"harga":"10.000.000"	
+	},
+	{
+		"foto"	:"img/iphone11.png",
+		"judul"	:"iPjone 11 Pro",
+		"harga":"10.000.000"	
+	}
+
+]
