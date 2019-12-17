@@ -1,0 +1,13 @@
+[
+	{
+		"foto"	:"img/sepatuhitam.png",
+		"judul"	:"Sepatu Hitam",
+		"harga":"100.000"	
+	},
+	{
+		"foto"	:"img/bapeamerica.png",
+		"judul"	:"Sepatu Bape America",
+		"harga":"100.000"	
+	}
+
+]
