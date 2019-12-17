@@ -1,0 +1,13 @@
+[
+	{
+		"foto"	:"img/macbook19.png",
+		"judul"	:"MacBook Pro 2019",
+		"harga":"12.000.000"	
+	},
+	{
+		"foto"	:"img/razer.png",
+		"judul"	:"Razer Laptop",
+		"harga":"15.000.000"	
+	}
+
+]
