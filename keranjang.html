@@ -157,7 +157,7 @@
                         </ul>
                     </li>
                     <li class="main-nav__menu-item">
-                        <a class="main-nav__menu-item-link" href="#">About Us</a>
+                        <a class="main-nav__menu-item-link" href="#">Contact Us</a>
                     </li>
                    
                     <li class="main-nav__menu-item">
@@ -179,7 +179,7 @@
           <li class="subtotal">Subtotal</li>
         </ul>
       </div>
-      <div class="keranjang-product">
+      <div id="produk1"  class="keranjang-product">
         <div class="item">
           <div class="product-image">
             <img src="img/nnn.png">
@@ -195,10 +195,19 @@
         </div>
         <div class="subtotal">5.000.000</div>
         <div class="remove">
-          <button><a href="">Hapus</a></button>
+          <!-- <button><a href="">Hapus</a></button> -->
+          <input type="submit" name="" value="Hapus" onclick="hapusProduk1();"/>
+           <script type="text/javascript">
+            function hapusProduk1() {
+ var elem = document.getElementById('produk1');
+ elem.parentNode.removeChild(elem);
+}
+
+
+          </script>
         </div>
       </div>
-      <div class="keranjang-product">
+      <div id="produk2" class="keranjang-product">
         <div class="item">
           <div class="product-image">
             <img src="img/jaz.png">
@@ -214,10 +223,19 @@
         </div>
         <div class="subtotal">500.000</div>
         <div class="remove">
-          <button><a href="">Hapus</a></button>
+          <!-- <button><a href="">Hapus</a></button> -->
+          <input type="submit" name="" value="Hapus" onclick="hapusProduk2();"/>
+           <script type="text/javascript">
+            function hapusProduk2() {
+ var elem = document.getElementById('produk2');
+ elem.parentNode.removeChild(elem);
+}
+
+
+          </script>
         </div>
       </div>
-       <div class="keranjang-product">
+       <div id="produk3" class="keranjang-product">
         <div class="item">
           <div class="product-image">
             <img src="img/kaos.png">
@@ -233,7 +251,16 @@
         </div>
         <div class="subtotal">500.000</div>
         <div class="remove">
-          <button><a href="">Hapus</a></button>
+          <input type="submit" name="" value="Hapus" onclick="hapusProduk3();"/>
+          <!-- <button><a href="" class="removeDummy">Hapus</a></button> -->
+          <script type="text/javascript">
+            function hapusProduk3() {
+ var elem = document.getElementById('produk3');
+ elem.parentNode.removeChild(elem);
+}
+
+
+          </script>
         </div>
       </div>
     </div>
@@ -259,8 +286,9 @@
           <div class="total-value final-value" id="basket-total">5.500.000</div>
         </div>
         <div class="box-total-checkout">
-          <button class="checkout-cta"><a href="">Checkout</a></button>
+          <button class="checkout-cta"><a href="" class="check">Checkout</a></button>
         </div>
+       
       </div>
     </aside>
 
@@ -272,5 +300,16 @@
 </section>
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="jquery.min.js"></script>
+ <script type="text/javascript">
+    $(".check").click(function() {
+
+        
+        alert('Terima Kasih Sudah Membeli');
+    
+        
+      })
+
+    
+  </script>
 </body>
 </html>
